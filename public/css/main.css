@@ -1,0 +1,386 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.3;
+        /* color: #333; */
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    a {
+        display: block;
+        text-decoration: none;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .producer {
+        color: black;
+    }
+    
+    .text-decoration-none {
+        text-decoration: none;
+    }
+    
+    .list-footer {
+        list-style-type: numeric;
+    }
+    /* #searchs-form {
+display: flex;
+justify-content: center;
+padding: 10px 0px;
+} */
+    
+    .input-search {
+        width: 450px;
+        padding: 2px 3px;
+        margin-right: 5px;
+    }
+    
+    .form-search {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+    .submit {
+        width: 100px;
+        padding: 3px 3px;
+    }
+    
+    button:hover {
+        background: #6ab04c;
+    }
+    
+    #site {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #wrapper {
+        position: relative;
+        left: 0px;
+        margin: 0px auto;
+    }
+    
+    #header-bootstrap,
+    #footer-bootstrap {
+        /* padding: 10px 10px; */
+        background: #ee5253;
+        z-index: 1;
+    }
+    /* #wp-content-bootstrap {
+margin-top: 160px;
+} */
+    
+    ul#main-menu {
+        /* float: right; */
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    ul#main-menu>li {
+        /* float: left; */
+        /* margin-left: 15px; */
+        padding: 0px 10px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    ul#main-menu>li>a {
+        display: block;
+        padding: 2px 5px;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.25s;
+        cursor: pointer;
+    }
+    
+    ul#main-menu>li:hover>a {
+        /* background: #6ab04c; */
+        /* transform: scale(1.1); */
+        text-decoration: none!important;
+        color: black;
+    }
+    /* danh muc san pham con cua thang main-menu header */
+    
+    ul.cateory-product {
+        list-style: none;
+    }
+    
+    .cateory-product-child {
+        display: none;
+        transition: all 0.25 ease-in-out;
+        width: 200px;
+        background: white;
+        text-align: left;
+        /* padding: 5px 5px; */
+        position: absolute;
+        z-index: 100;
+    }
+    /* menu responsive */
+    
+    ul#responsive-main-menu {
+        list-style: none;
+        width: 100%;
+        left: 0px !important;
+        transition: right 0.25s;
+    }
+    
+    ul#responsive-main-menu li a {
+        display: inline-block;
+        padding: 5px 10px;
+        color: #fff;
+    }
+    
+    ul#responsive-main-menu li {
+        border-top: 1px solid #3e9e46;
+    }
+    
+    ul#responsive-main-menu li a {
+        text-decoration: none!important;
+        /* color: #ee5253; */
+    }
+    
+    ul#responsive-main-menu li:hover>a {
+        text-decoration: none!important;
+        color: #ee5253;
+    }
+    
+    ul#responsive-main-menu>li>i {
+        float: right;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 24px;
+    }
+    
+    ul#responsive-main-menu>li>i:hover {
+        color: #ee5253;
+    }
+    
+    ul#responsive-main-menu li ul {
+        list-style: none;
+        display: none;
+        width: 100%;
+    }
+    
+    ul#responsive-main-menu li ul li {
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+    
+    #wp-respon-menu {
+        background: #6ab04c;
+        width: 250px;
+        color: #f5f5f5;
+        position: absolute;
+        top: 0px;
+        right: -250px;
+        height: 100%;
+        transition: right 0.25s;
+    }
+    
+    #wp-respon-menu h5 {
+        text-transform: capitalize;
+        margin-left: 10px;
+        padding: 10px 0px;
+    }
+    
+    #respon-head {
+        position: relative;
+    }
+    
+    #icon-menu {
+        display: none;
+        color: #f5f5f5;
+        font-size: 20px;
+        position: absolute;
+        left: -25px;
+        top: 20px;
+        cursor: pointer;
+    }
+    /*end me-nu-responsive  */
+    
+    #Logo {
+        height: 80%;
+    }
+    
+    #Logo:hover {
+        text-decoration: underline;
+    }
+    /* menu header */
+    
+    ul#main-menu li:hover a {
+        text-decoration: underline;
+    }
+    
+    #icon-menu:hover {
+        color: #ee5253;
+    }
+    
+    ul#main-menu li .cateory-product-child li {
+        padding: 7px 5px;
+        border-top: 1px solid rgb(230, 221, 221);
+    }
+    
+    ul#main-menu li .cateory-product-child a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    ul#main-menu ul.cateory-product-child li:hover {
+        background: #eeebeb;
+    }
+    /* end-menu-header */
+    /* menu slidebar */
+    
+    .title-menu {
+        background: #747d8c;
+        padding: 10px 15px;
+        color: #ffffff;
+    }
+    
+    .menu-slinebar {
+        margin: 0px 0px;
+        border: 1px solid#d8e0e6;
+    }
+    
+    ul.category-product li a {
+        padding: 8px 15px;
+        border-bottom: 1px solid #d8e0e6;
+        color: #34495e;
+    }
+    
+    ul.category-product li:last-child a {
+        border-bottom: none;
+    }
+    
+    .category-product li a:hover {
+        background: #f5f3f3;
+        text-decoration: none;
+    }
+    /* end-m-slidebar */
+    /* #site.open-respon-menu #wrapper {
+left: 0px;
+transition: left 0.25s;
+} */
+    
+    #site.open-respon-menu #wp-respon-menu {
+        right: 0px;
+        z-index: 100;
+        position: fixed;
+    }
+    
+    #site.open-respon-menu #icon-menu {
+        top: 15px;
+        left: 225px;
+    }
+    /* css san pham */
+    
+    .detail-thumb {
+        overflow: hidden;
+    }
+    
+    .detail-thumb img {
+        transition: all 0.25s;
+    }
+    
+    .detail-thumb img:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    
+    .card:hover {
+        border: 1px solid #c4ccd6;
+    }
+    
+    .category {
+        font-size: 26px;
+        color: #34495e;
+        padding-bottom: 10px;
+    }
+    
+    .category:hover {
+        text-decoration: none;
+        color: #ee5253;
+    }
+    /* css san pham trang chi tiet */
+    
+    .product-information h5 {
+        border-bottom: 1px solid#d1dbe2;
+        padding: 10px 0px;
+    }
+    
+    .information_product {
+        line-height: 40px;
+    }
+    
+    .information_product p {
+        margin: 0px;
+    }
+    /* .product-information p {
+        line-height: 1.5;
+    } */
+    
+    .img-detail-product {
+        padding: 10px 10px;
+    }
+    
+    .price-product {
+        font-weight: bold;
+        padding: 7px 0px;
+        margin: 0px;
+    }
+    
+    a.name-product {
+        text-decoration: none !important;
+    }
+    
+    a.name-product:hover {
+        color: #ee5253 !important;
+    }
+    
+    span.ordered_buy {
+        display: block!important;
+    }
+    
+    .product-description h5 {
+        padding: 10px 0px;
+    }
+    
+    .product-description p {
+        line-height: 1.5;
+    }
+    /* end css san pham trang chi tiet */
+    /* Nut back to top */
+    
+    #back-to-top {
+        width: 50px;
+        height: 50px;
+        background: #6ab04c;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        cursor: pointer;
+    }
+    /* danh muc san pham con cua phan header*/
+    
+    #wp-content-bootstrap {
+        min-height: 600px;
+    }

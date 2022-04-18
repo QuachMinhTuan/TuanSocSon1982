@@ -1,0 +1,56 @@
+            @media screen and (max-width: 1024px) {
+                #wrapper {
+                    width: 100%;
+                }
+            }
+            /* Ipad dọc(768x1024) */
+            
+            @media screen and (max-width: 992px) {}
+            
+            @media screen and (max-width: 768px) {
+                .ordered {
+                    display: block !important;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                /* ul#main-menu {
+                    display: none;
+                } */
+                #icon-menu {
+                    display: block;
+                }
+                #Logo {
+                    display: inline-block;
+                    float: none;
+                }
+                /* .input-search {
+                    max-width: 85%;
+                } */
+                #content,
+                #slinebar {
+                    width: 100%;
+                }
+                #slinebar {
+                    display: none;
+                }
+                #slidebar-bootstrap {
+                    display: none;
+                }
+                /* #wp-content-bootstrap {
+                    margin-top: 130px;
+                } */
+            }
+            /* Tablet nhỏ(480x640) */
+            
+            @media screen and (max-width: 480px) {
+                .ordered {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                /* ul#main-menu {
+                    display: none;
+                } */
+                .input-search {
+                    width: 150px;
+                }
+            }
